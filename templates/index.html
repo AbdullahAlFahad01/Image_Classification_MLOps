@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medicine Image Classifier</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💊 Medicine Image Classifier</h1>
+
+    <p class="subtitle">
+        Upload a medicine image and let the AI predict its class.
+    </p>
+
+    <img id="preview" src="" alt="Image Preview">
+
+    <input
+        type="file"
+        id="image"
+        accept="image/*"
+        onchange="previewImage(event)"
+    >
+
+    <button onclick="predict()">
+        Predict Image
+    </button>
+
+    <div id="result" class="result">
+
+        Prediction will appear here...
+
+    </div>
+
+    <footer>
+
+        Developed by <strong>Abdullah Al Fahad</strong><br>
+
+        Data Scientist | ML Engineer
+
+    </footer>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
